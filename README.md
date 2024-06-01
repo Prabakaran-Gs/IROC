@@ -1,10 +1,12 @@
-#Traversing
+# Traversing
 
-Checking :
-    if      -> cor -> dir
-        1. Obstacles          
-        2. Boundary 
-        3. Already Visited 
+## Checking :
+    if (Obstacles    or      
+        Boundary     or 
+        Already Visited ):
+
+        choose_direction
+        
     
     else:
         Forward
