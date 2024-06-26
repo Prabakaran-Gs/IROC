@@ -4,7 +4,7 @@ import sys
 
 # Initialize serial connection
 ser = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=1)
-ser1 = serial.Serial(port='/dev/ttyUSB0', baudrate=9600, timeout=1)
+# ser1 = serial.Serial(port='/dev/ttyUSB0', baudrate=9600, timeout=1)
 
 # Initialize pygame
 pygame.init()
@@ -28,14 +28,14 @@ while running:
                 ser.write('l'.encode())
             elif event.key == pygame.K_d:
                 ser.write('r'.encode())
-            elif event.key == pygame.K_u:
-                ser1.write('u'.encode())
-            elif event.key == pygame.K_j:
-                ser1.write('d'.encode())
-            elif event.key == pygame.K_h:
-                ser1.write('a'.encode())
-            elif event.key == pygame.K_k:
-                ser1.write('o'.encode())
+            # elif event.key == pygame.K_u:
+            #     ser1.write('u'.encode())
+            # elif event.key == pygame.K_j:
+            #     ser1.write('d'.encode())
+            # elif event.key == pygame.K_h:
+            #     ser1.write('a'.encode())
+            # elif event.key == pygame.K_k:
+            #     ser1.write('o'.encode())
                 
             
         elif event.type == pygame.KEYUP:
